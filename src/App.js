@@ -9,11 +9,11 @@ function App() {
   }, [text]);
 
   useEffect(() => {
-    const timer = setTimeout(() => setCount(0), 5000);
+    const timer = setTimeout(() => setCount(0), 50000);
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
 
-  console.log("Component rendering");
+  console.log("Componentt rendering");
 
   return (
     <div>
